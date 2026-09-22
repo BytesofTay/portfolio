@@ -1,14 +1,10 @@
-import logo from "./logo.svg";
-import "./App.css";
+import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      Hey my name is <div>hellooo</div>
-      <div>Hi guys my name what my name what slim shady </div>
-      <div> Thanks for helping me Larry</div>
-    </div>
-  );
-}
-
+const projects = [
+  {name:'SignalForge Health AI',tag:'Backend + AI',copy:'Health-tech backend services exploring RAG, semantic search, vector embeddings, and LLM-powered workflows.',stack:'Python · FastAPI · PostgreSQL · AWS · Oracle Vector Search'},
+  {name:'HealthSignals',tag:'SwiftUI + HealthKit',copy:'A privacy-conscious, read-only dashboard that presents 32 live health metrics with diagnostics and clear missing-data states.',stack:'Swift · SwiftUI · HealthKit · iOS'},
+  {name:'Questline',tag:'Product Engineering',copy:'A habit-game MVP that turns routines into quests, coins, avatar progression, and leaderboards with persistent state.',stack:'TypeScript · React · State Management'},
+  {name:'STEM Pathfinder',tag:'Civic Tech',copy:'A parent-facing LAUSD magnet-school discovery experience with ranked matches, maps, saved schools, and an accessible quiz.',stack:'JavaScript · Leaflet · FastAPI · Netlify'}
+];
+function App(){return <main><nav><a className="brand" href="#top">TR<span>.</span></a><div className="navlinks"><a href="#work">Work</a><a href="#about">About</a><a href="https://www.linkedin.com/in/tayllor-hazel-robertson/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></nav><section className="hero" id="top"><p className="eyebrow">BACKEND · AI · PRODUCT ENGINEERING</p><h1>Building useful systems at the intersection of software and people.</h1><p className="lede">I’m Tayllor Robertson, a software engineer and technical product builder focused on Python backends, APIs, data workflows, and practical AI.</p><div className="actions"><a className="button primary" href="#work">Explore my work</a><a className="button" href="mailto:tayllor.robertson@gmail.com">Get in touch</a></div></section><section className="metrics"><div><strong>32</strong><span>Health metrics modeled</span></div><div><strong>5,103</strong><span>Profiles analyzed at NexusTrade</span></div><div><strong>87%</strong><span>Increase in first backtests</span></div></section><section id="work" className="work"><p className="eyebrow">SELECTED WORK</p><h2>Projects with a purpose.</h2><div className="grid">{projects.map(p=><article key={p.name}><span className="tag">{p.tag}</span><h3>{p.name}</h3><p>{p.copy}</p><small>{p.stack}</small></article>)}</div></section><section id="about" className="about"><div><p className="eyebrow">ABOUT</p><h2>Technical depth, product judgment.</h2></div><p>My work spans backend systems, AI integrations, mobile health data, and user-centered product flows. I enjoy turning ambiguous problems into clear interfaces, reliable services, and measurable outcomes.</p></section><footer><span>© 2026 Tayllor Robertson</span><span>Los Angeles · Open to SWE and technical PM internships</span></footer></main>}
 export default App;
