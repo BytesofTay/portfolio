@@ -12,6 +12,7 @@ A focused portfolio for backend engineering, AI engineering, and technical produ
 - **HealthSignals** — read-only SwiftUI and HealthKit dashboard presenting 32 health metrics with privacy-conscious states.
 - **Questline** — TypeScript/React habit-game MVP with quests, progression, and leaderboards.
 - **STEM Pathfinder** — LAUSD magnet-school discovery tool with ranked matches, map exploration, and saved schools.
+- **Verda Is 100** — personal web project; [open the live project](https://verdais100.vercel.app/) or read the [portfolio reference](docs/verda-is-100.md).
 
 ## Run locally
 
